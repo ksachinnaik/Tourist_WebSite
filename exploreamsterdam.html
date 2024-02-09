@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">About us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="flex items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <p class="text-3xl">Nearby Attractions</p>
+    </div>
+
+    <div class="relative w-full bg-red-100 h-96">
+        <div class="absolute inset-0 z-0 bg-center bg-cover"
+            style="background-image: url('https://www.theagilityeffect.com/app/uploads/2020/11/00_VINCI-ICONOGRAPHIE_1280x680-amsterdam-canal-on-the-west-P98BNG2.jpg')">
+        </div>
+        <div
+            class="absolute inset-0 z-10 flex items-center justify-center text-6xl font-semibold text-white duration-300 ">
+            AMSTERDAM</div>
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 ml-4 mr-4 space-y-5">
+
+
+        <a href="onehoureveningcanalcruise.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/94696324.jpg?k=cddd09986034ce13989c569a9ae179d06628d15a24d26065dabf2d887b1f7a13&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">One-hour Evening Canal Cruise</h1>
+                        <p class="lg:text-lg md:text-sm">A chance to cruise down Amsterdam's canals and learn about the city</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,590
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        <a href="youseumguidedtour.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/107276020.jpg?k=522d4a91994a38bec388b94d0c5867be54851832ef7684c9dcdd4fb7546dbd94&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Pancake CruiseHidden Paris Guided Walking Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A river cruise exploring Amsterdam's skyline while trying freshly baked Dutch pancakes
+
+                        </p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,723
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        <a href="onehoureveningcanalcruise.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115830685.jpg?k=570f2af1754e0c3756c9c0ce99401caab622da6418970a8e4c57188948fd9388&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Magic Show Ticket</h1>
+                        <p class="lg:text-lg md:text-sm">A two-hour extravaganza of international magic and comedy</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,209
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        <a href="youseumguidedtour.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/103380582.jpg?k=1afa9f99f17a3eb3573922453f05cf4ba609ae6b5e16c452b12d36ed3ddf8734&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Youseum Guided Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A fun-filled guided tour at this social media museum</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,763
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        <a href="onehoureveningcanalcruise.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/106483322.jpg?k=37e78734af8532f9e6f6906c0849f0f5bc2e4ed48aaf507e4abe3c37f2f62996&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Jewish Cultural Quarter Admission</h1>
+                        <p class="lg:text-lg md:text-sm">A historic neighborhood rich in Jewish culture and traditions</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,502
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        <a href="youseumguidedtour.html">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/116357360.jpg?k=f1c10ea825a9991e86ec14b4d4b9788ff3a064e032325c84f5edef2cfcc96b69&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Amsterdam</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Private Tour at a Diamond Polishing Factory</h1>
+                        <p class="lg:text-lg md:text-sm">A private royalty-themed guided visit to learn about the history of Royal Coster Diamonds</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,020
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+        
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+    <div class="items-center justify-center w-full p-10 text-center text-gray-300 bg-gray-800">
+        <h3 class="text-4xl font-bold">Explore Hotels</h3>
+        <p></p>
+    </div>
+    
+    <div class="grid gap-6 p-8 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      <!--hotel 1-->
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/27119008.webp?k=f341921564b8fe9b3704e678ae0cef47e8f51c95c72c7efbef0c6c5bc92e8546&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Hôtel des </h3>
+               <p>38 Rue Poncelet </p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,872</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.8</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>2 guests</p></span>
+                   </div>
+          </div>
+          <!--hotel 2-->     
+          <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+            <div class="rounded-lg ">
+                <a href="thechamberlain.html">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/267989333.jpg?k=29412cf73f3d40f3cd51d18ececadc6e53035c09d97971b2647a8a11237fdf54&o=&hp=1" alt=""  class="object-cover w-full rounded-lg h-80">
+                </a>
+                
+            </div>
+            <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+               <div> <h3 class="text-lg font-bold text-gray-800">The Chamberlain</h3>
+                <p>Tower Bridge</p></div>
+                    <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹13,352</p></div>
+            </div>
+                    <div class="flex justify-between py-2 ml-8 mr-4">
+                        <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                          <p class="px-1 bg-green-500 rounded-md text-bold">4.8</p></span>
+                          <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                          </svg><p>2 guests</p></span>
+                    </div>
+           </div>     
+          <!--hotel 3-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/118791389.jpg?k=1983977c4f975168bb4d92952495b3ef5bc00a2eb144065c2e6d68458f279ab8&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Hôtel Du Bois </h3>
+               <p>11 rue du Dome</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹8,345</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.7</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 4-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/16352880.jpg?k=3142ff371ddecab8c7917d37533222fea1535b2cd6271cdb3e2b1a43bae0c2d3&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Citadines Les Halles</h3>
+               <p>4 Rue Des Innocents</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹7999</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.3</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 5-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelmonge.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/75524154.jpg?k=b28843f262047eaae92b29861fd0a8cca65e7c8f834e0c9864a95887f7b4842d&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Hotel Monge</h3>
+               <p>55 rue Monge, 5th arr</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹7,324</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">3.9</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 6-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/16386503.jpg?k=aaf99667f2877c776409177a97c74d426c20bc0f04ae42e26c875e4732eb3dd4&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Citadines Trocadéro</h3>
+               <p>29 Bis, Rue Saint-Didier</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹6,784</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.7</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>2 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 7-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/33313556.jpg?k=0599b015e1ce53c59df9def115fc692adbb1bbd154df8d5e2b316535deb45c6d&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Les Patios du Marais</h3>
+               <p>26 rue des gravilliers</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹8,475</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.0</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 8-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/212621021.jpg?k=e328b83af7dbd392338e63c5bef41da91506b2be21a2ea71c85ffe712c9367cf&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Citadines Place</h3>
+               <p>18, Place d'Italie</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,874</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.2</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 9-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="citadinessaint.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square200/176543097.jpg?k=bb632604fc9b38a0f58f5d5a0c30e697d1c45f49d2df365d1a0f1c2e020e90c2&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Belfast </h3>
+               <p>10 avenue Carnot</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹14,394</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.6</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+                
+          
+        
+      </div>
+      
+    
+
+
+
+</body>
+
+</html>

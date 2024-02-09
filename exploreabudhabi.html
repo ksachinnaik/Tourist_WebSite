@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">About us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="flex items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <p class="text-3xl">Nearby Attractions</p>
+    </div>
+
+    <div class="relative w-full bg-red-100 h-96">
+        <div class="absolute inset-0 z-0 bg-center bg-cover"
+            style="background-image: url('https://www.arabianbusiness.com/public/images/2021/06/14/abudhabiskyline_1.jpg')">
+        </div>
+        <div
+            class="absolute inset-0 z-10 flex items-center justify-center text-6xl font-semibold text-white duration-300 ">
+            ABU DHABI</div>
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 ml-4 mr-4 space-y-5">
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/101296330.jpg?k=67dcbc86e812e8f636a7e674c5ee07c43caa1727767d8542d217475d145ab84a&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Ski Dubai Two-hour Slope Pass</h1>
+                        <p class="lg:text-lg md:text-sm">A two-hour ski pass to Ski Dubai with ski equipment included</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹4,440
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/102612868.jpg?k=22af3362725c999e01d161ce2cd5a4f67564f7aa4020a7d89e7855e520d2e817&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Full-day Tour to Abu Dhabi with One-hour Yacht Cruise</h1>
+                        <p class="lg:text-lg md:text-sm">A full-day guided tour to discover Abu Dhabi's highlights from Dubai</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹5,853
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/96806259.jpg?k=9abbb9e807fd08f1cc3b666f84d9d63030aaf63f199f31a07824a0be010e7ef7&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Motiongate Tickets</h1>
+                        <p class="lg:text-lg md:text-sm">Explore Hollywood-inspired rides and attractions at Motiongate Dubai</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,753
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115717789.jpg?k=64b188e9ce0459317fc4b29b9b32e32ed54e38de95f2eed568649a137137780b&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Desert Safari with Barbecue Dinner at Bedouin Camp</h1>
+                        <p class="lg:text-lg md:text-sm">Desert activities on red sand dunes with camel rides, dance shows and campsite dinner</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,996
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/106859556.jpg?k=b5d478964ec7ad1e1225ffa44e20aa4b5012423a1cc47e90f4b936f79d95d3e3&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">The Pointe, Palm Jumeirah Water Sports Experience</h1>
+                        <p class="lg:text-lg md:text-sm">A whole day to experience fun water activities at the city's iconic waterfront destination
+
+                        </p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹4,053
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/102797264.jpg?k=f09819f26a1e209dc2d7bd72a1c79c7e8a95b63c18f36edd878ffc4bb6df37a9&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Dhow Dinner Cruise</h1>
+                        <p class="lg:text-lg md:text-sm">A dinner cruise on Dubai Creek with hotel transfer services provided</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,353
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/113018217.jpg?k=c483ec5f85580b9685b209a3ea453b0ca4a54b4bd070d93cb6818723444d858b&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Abu Dhabi</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Admission to Qasr Al Watan</h1>
+                        <p class="lg:text-lg md:text-sm">A ticket to the majestic Arabian palace in Abu Dhabi</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,211
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+       
+       
+       
+       
+       
+        
+       
+       
+       
+        
+        
+       
+        
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

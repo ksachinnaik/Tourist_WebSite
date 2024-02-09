@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="flex items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <p class="text-3xl">Nearby Attractions</p>
+    </div>
+
+    <div class="relative w-full bg-red-100 h-96">
+        <div class="absolute inset-0 z-0 bg-center bg-cover"
+            style="background-image: url('https://cdn.turkishairlines.com/m/432fd2b01f3fe806/original/1400-660-jpg.jpg')">
+        </div>
+        <div
+            class="absolute inset-0 z-10 flex items-center justify-center text-6xl font-semibold text-white duration-300 ">
+            ATHENS</div>
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 ml-4 mr-4 space-y-5">
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/96406103.jpg?k=2cc16cee9df3a08d5b0e41d90bcb96d2574a1ce411eaf6ea07ee1b68e8a55a90&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Ancient Athens E-tickets</h1>
+                        <p class="lg:text-lg md:text-sm">Top sights and audio tours of Ancient Athens landmarks</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹4,319
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/104557873.jpg?k=89f753b37ae1d70776db0caab0ee6aa2ef929ca76c22c4b587441be27fd07f8c&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Cape Sounio Sunset Tour with Temple of Poseidon Visit</h1>
+                        <p class="lg:text-lg md:text-sm">A picturesque sunset tour to Cape Sounio's Temple of Poseidon</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹5,288
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/116208161.jpg?k=3c1912664d969ab917b4983cee6d14cbc63c49e4502929e917c99f93d2fa058e&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Night Walking Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A glimpse of Athens's nightlife on a walking tour through neighborhoods, bars and restaurants</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,367
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/111030905.jpg?k=2d3fc75ea5bfd2ea9c76d1f6333738a4de77408eff241f6d301f37587a70779d&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Acropolis Museum Nighttime Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A private tour of the Acropolis Museum's main attractions by night</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹4,848
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115650116.jpg?k=5663ef24a0995968af7927ef652f42a81ead2dd3f41c82a9808375adcd53a20d&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Admission to the Temple of Olympian Zeus</h1>
+                        <p class="lg:text-lg md:text-sm">A visit to the monumental archaeological ruin in central Athens</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹910
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/116213012.jpg?k=caccb1d071f311aa1f180473dff29921c171b72ece3b247f40c2725c2370c8cc&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Athens</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Ancient Athens Guided Walking Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A walking tour to explore the historical highlights of the city</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹16,748
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        
+
+        
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

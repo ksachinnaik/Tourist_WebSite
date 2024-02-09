@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center px-2 py-3 logo">
+                            <img src="images/iconfinder_897231_airplane_map_travel_vacation_icon.svg"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+    <div class=" w-full p-10 text-gray-300 bg-gray-800 h-40 ">
+        <div class="py-2 ml-12">
+            <div class="bg-white w-1/2 flex items-center rounded-full shadow-xl relative">
+              <input class="rounded-l-full w-96 py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
+              
+              <div class="p-4 absolute right-0">
+                <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>    
+
+    <!-- hero -->
+    <div class="py-16 bg-gradient-to-r from-green-400 to-blue-500 hero">
+        <!-- container -->
+        <div class="container px-4 mx-auto sm:px-8 lg:px-16 xl:px-20">
+            <!-- hero wrapper -->
+            <div class="grid items-center grid-cols-1 gap-8 hero-wrapper md:grid-cols-12">
+
+                <!-- hero text -->
+                <div class="col-span-6 hero-text">
+                    <h1 class="max-w-xl text-4xl font-bold leading-tight text-yellow-300 md:text-5xl">Don't listen to what they say, Go See</h1>
+                    <hr class="w-12 h-1 mt-8 bg-orange-500 rounded-full ">
+                    <p class="mt-8 text-base font-semibold leading-relaxed text-gray-100">Your ultimate travel companion. Carries all the information you need while travelling</p>
+                </div>
+
+                <!-- hero image -->
+                <div class="col-span-6 hero-image">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><title>#102_travelling_twocolour</title><path d="M81.77,83.39c-28.67,17.47-45.66,49.51-43,83C40.18,183.48,46.54,200,63.35,209c44.83,24,240.55,24.45,269.51-18s18.19-102.84-44.8-128C233.46,41.18,155.82,38.3,81.77,83.39Z" fill="#e6e6e6" opacity="0.3"/><path d="M283.69,206V180.64a4.65,4.65,0,0,1,4.64-4.65h18.49a4.65,4.65,0,0,1,4.64,4.65V206" fill="none" stroke="#ffd200" stroke-miterlimit="10" stroke-width="2"/><path d="M283.69,206V180.64a4.65,4.65,0,0,1,4.64-4.65h18.49a4.65,4.65,0,0,1,4.64,4.65V206" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" opacity="0.08"/><path d="M159.26,145.74s-18.34,7.36-12.41,28.68,6.48,23.63,19.71,22.32,4.66-22.32,4.66-22.32Z" fill="#ffd200"/><path d="M152.37,79.92s-50.86,11.79-64.24,41.59l45.05,3.4,11.54-7Z" fill="#ed8936"/><path d="M152.37,79.92s-50.86,11.79-64.24,41.59l45.05,3.4,11.54-7Z" fill="#fff" opacity="0.46"/><ellipse cx="200.42" cy="272.36" rx="154.08" ry="11.83" fill="#e6e6e6" opacity="0.45"/><path d="M134.79,246.33s-4.45,3.22-8.54.91-7.67.77-4.87,4.13,14.8,5,14.8,5l4.51-7.28Z" fill="#ed8936"/><path d="M215.08,260.56s1.94,5.15,6.62,5.47,6,4.88,1.79,6.14-15.12-4-15.12-4l.26-8.57Z" fill="#ed8936"/><path d="M79.19,260.08s-10.59-2.9-12.89-12.75c0,0,16.41-3.32,16.87,13.62Z" fill="#ed8936" opacity="0.58"/><path d="M80.49,259s-7.4-11.7-.89-22.64c0,0,12.48,7.93,6.93,22.66Z" fill="#ed8936" opacity="0.73"/><path d="M82.4,259s3.9-12.35,15.72-14.69c0,0,2.21,8-7.65,14.73Z" fill="#ed8936"/><polygon points="74.72 258.75 76.86 273.44 90.38 273.5 92.37 258.83 74.72 258.75" fill="#24285b"/><path d="M156.2,53.77s1.74,6.3,4.27,10a3.28,3.28,0,0,0,4.58.82c1.83-1.3,3.93-3.59,3.41-7.08l-.15-6a5.88,5.88,0,0,0-4.6-5C159.34,45.28,155,50,156.2,53.77Z" fill="#f4a28c"/><polygon points="169.43 54.63 177.9 74.3 166.73 78.19 165.05 62.32 169.43 54.63" fill="#f4a28c"/><path d="M170.86,55.92h0a.62.62,0,0,1-.23.72,4.34,4.34,0,0,1-5.25-.1,5.45,5.45,0,0,1-2.08-5.6,25.94,25.94,0,0,1-5.48,2.52,6,6,0,0,1-2,.32l-3.28-4s-4.23-3.66-1.89-5.67,4.76.61,6.11-2.44,1.54-4.07,4.27-3.72.83,3.12,4.53,1.7,4.36.08,5,1.75a3.1,3.1,0,0,1-.12,1.82A20.1,20.1,0,0,0,170.86,55.92Z" fill="#24285b"/><path d="M164.66,56.6s-.83-2.37,1-2.85,3.06,3,.77,4.16Z" fill="#f4a28c"/><path d="M157.5,57.68l-.83,3A1,1,0,0,0,157.85,62l2.51-.43Z" fill="#f4a28c"/><rect x="289.35" y="173.73" width="16.36" height="5.3" fill="#24285b"/><path d="M165.31,64.43s1.44-.49,3.72-3.33c0,0,1.05,4.15-3.26,8Z" fill="#ce8172" opacity="0.31"/><path d="M162.12,76.62l6.43-1.16a90.83,90.83,0,0,0,8.92-2.08c11-3.14,43.37-10.53,52.58,8.2,11.16,22.69-7.47,96.3-7.47,96.3h-51s-10.41-30.66-25.29-49.62S121,88.21,162.12,76.62Z" fill="#ed8936"/><path d="M152.37,79.92s-2.56,16.32,19.86,4l-5.75-8A58,58,0,0,0,152.37,79.92Z" opacity="0.08"/><path d="M94.92,139.7c-10.16-3.16-11.68-17-2.47-22.37a25.2,25.2,0,0,1,10.9-3.2c17.08-1.26,46.18-2.85,46.18-2.85s17.52,5.7,14.77,14.24-15.08-5.06-15.08-5.06S116.66,146.46,94.92,139.7Z" fill="#f4a28c"/><rect x="144.58" y="110.56" width="6.04" height="12.3" transform="translate(-14.69 21.47) rotate(-7.93)" fill="#24285b"/><rect x="143.84" y="109.5" width="6.04" height="3.82" transform="matrix(0.99, -0.14, 0.14, 0.99, -13.96, 21.32)" fill="#ffd200"/><path d="M166.48,75.84s-7.76,7.14,1.21,8.67,9.78-11.13,9.78-11.13Z" fill="#f4a28c"/><path d="M171.63,177.88l-38.45,68.45,9.93,6.91s21.24-35.45,46.53-53.26a6.38,6.38,0,0,1,9.72,3.27c6.84,21.15,7.42,58,7.42,58H218.5l4.08-83.34Z" fill="#24285b"/><path d="M171.63,177.88s19.15-15,25.92-36.41a6.57,6.57,0,0,1,11.08-2.37l18.2,19.68,3.67-20.57L217.19,96.09,192,79.92l-5,19.51Z" opacity="0.08"/><path d="M163.36,158.94s11.81-11.72,14.11-50.86c1.91-32.56,6.58-38.92,16.33-41.2,15.06-3.54,18.65.94,23.39,7.63,0,0-24.08,1.49-23.24,16.56s-2.51,68.75-22.32,86.81C171.63,177.88,162.44,177.11,163.36,158.94Z" fill="#ffd200"/><path d="M163.36,158.94s11.81-11.72,14.11-50.86c1.91-32.56,6.58-38.92,16.33-41.2,15.06-3.54,18.65.94,23.39,7.63,0,0-24.08,1.49-23.24,16.56s-2.51,68.75-22.32,86.81C171.63,177.88,162.44,177.11,163.36,158.94Z" fill="#fff" opacity="0.46"/><path d="M196.37,93.76c-5-12,8.93-27.14,21-22.46,10.32,4,21.35,12.84,27.34,30.64C258.94,144.25,291,164.7,291,164.7s16.36,2.7,16.36,8.65-19.34,0-19.34,0-50.2-20.83-76.24-54.3C204,109,199.22,100.59,196.37,93.76Z" fill="#f4a28c"/><path d="M226.35,134.56s19.94-6.75,25-16.62c0,0-7.22-38.91-32.87-47.28-8.44-2.75-17.87.34-22.29,8C190.83,88,192,105.22,226.35,134.56Z" fill="#ed8936"/><path d="M226.35,134.56s19.94-6.75,25-16.62c0,0-7.22-38.91-32.87-47.28-8.44-2.75-17.87.34-22.29,8C190.83,88,192,105.22,226.35,134.56Z" fill="#fff" opacity="0.46"/><rect x="271.49" y="198.46" width="52.16" height="67.53" fill="#ffd200"/><rect x="278.47" y="265.99" width="6.37" height="6.37" fill="#24285b"/><rect x="309.43" y="265.99" width="6.37" height="6.37" fill="#24285b"/><rect x="280.14" y="211.01" width="7.25" height="40.35" opacity="0.08"/><rect x="293.95" y="211.01" width="7.25" height="40.35" opacity="0.08"/><rect x="306.92" y="211.01" width="7.25" height="40.35" opacity="0.08"/><circle cx="222.58" cy="34.77" r="21.04" fill="#24285b"/><polygon points="214.44 34.77 196.44 52.7 220.3 43.18 214.44 34.77" fill="#24285b"/><rect x="220.3" y="25.3" width="3.51" height="11.08" fill="#fff"/><rect x="220.3" y="39.43" width="3.51" height="3.51" fill="#fff"/></svg>
+                </div>
+            </div>
+        </div>
+    </div><!-- end hero -->
+
+
+
+        <!-- <div class="flex p-4 mb-4 text-gray-800 bg-yellow-300 rounded-lg">
+            <div class="flex mr-4">
+                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+            </div>
+            <div>
+                <h3 class="text-lg font-bold uppercase">Adithya Chippa</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odit aperiam nostrum ratione optio, asperiores et.</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="flex">
+            <div class="w-1/2">
+                <div class="flex p-4 text-gray-800 bg-gray-200 rounded-lg">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold">Vandom Stephen</h3>
+                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-1/2">
+                <div class="flex p-4 text-gray-800 bg-gray-200 rounded-lg">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold">Vandom Stephen</h3>
+                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <!-- https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 -->
+
+        <!-- <div class="w-64 overflow-hidden bg-gray-300 rounded-lg">
+            
+            <div>
+                <img class="object-cover" src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Shoes">
+            </div>
+
+            
+            <div class="px-3 py-4 text-gray-800 ">
+                <div>
+                    <span class="px-1 text-xs font-bold tracking-tight text-yellow-900 bg-yellow-600 rounded-full">HOT</span>
+                    <span class="px-1 text-xs font-bold tracking-tight text-yellow-900 bg-yellow-600 rounded-full">NEW</span>
+                </div>
+                <h3 class="mt-2 text-xl font-bold">Nike Sneakers</h3>
+                <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mt-1 font-bold tracking-wide">$100</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="mt-10 text-gray-300">
+            <div class="relative w-full p-2 overflow-hidden bg-gray-900 border-2 border-blue-300 rounded-lg border-opacity-20">
+                <svg class="absolute w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" placeholder="Search" class="w-11/12 px-2 ml-8 bg-transparent outline-none">
+            </div>
+        </div> -->
+
+
+        <!-- <div>
+            <button class="px-4 py-2 text-gray-800 bg-gray-300 rounded" id="btn">
+                Hover
+            </button>
+            <div class="absolute hidden px-1 text-sm text-gray-100 bg-gray-700 bg-opacity-50 rounded shadow-xl" id="tooltip">
+                This is tool tip
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', ()=>{
+                const btn = document.querySelector("#btn");
+                const tooltip = document.querySelector("#tooltip");
+
+                btn.addEventListener('mouseenter', ()=>{
+                    tooltip.classList.remove('hidden');
+                })
+                btn.addEventListener('mouseleave', ()=>{
+                    tooltip.classList.add('hidden');
+                })
+            })
+        </script> -->
+
+        <!-- <div class="w-full h-screen bg-gray-900">
+            <ul class="w-32 m-5 text-gray-800 bg-gray-100 divide-y divide-gray-700 rounded divide-opacity-25">
+                <li class="flex justify-between px-4 py-2">List item
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+
+                </li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="flex items-center justify-center h-screen bg-gray-900">
+            <div>
+                <button class="px-4 py-2 m-2 bg-red-300 rounded" id="menu-btn">Menu</button>
+            <div class="flex-col hidden w-32 p-2 mt-1 bg-gray-200 rounded" id="dropdown">
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Posts</a>
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Profile</a>
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Settings</a>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', ()=>{
+                const menuBtn = document.querySelector('#menu-btn');
+                const dropdown = document.querySelector('#dropdown');
+                
+                menuBtn.addEventListener('click', ()=>{
+                    /* if(dropdown.classList.contains('hidden')){
+                        dropdown.classList.remove('hidden');
+                        dropdown.classList.add('flex');
+                    } else {
+                        dropdown.classList.add('hidden');
+                        dropdown.classList.remove('flex');
+                    } */
+
+                    dropdown.classList.toggle('hidden');
+                    dropdown.classList.toggle('flex');
+                })
+            })
+        </script> -->
+
+
+
+        <!-- <div class="flex items-center justify-center h-screen space-x-2 bg-gray-900">
+            <div class="px-2 text-2xl bg-red-700 rounded-2xl">Java</div>
+            <div class="flex items-center justify-center p-2 px-2 text-2xl bg-red-700 rounded-2xl">Javascript 
+                <svg class="w-6 h-6 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+        </div> -->
+
+        
+        <!-- <div>
+            <button class="px-4 py-2 -mr-2 transition duration-200 transform bg-red-600 border rounded-l-lg shadow hover:bg-yellow-300 hover:text-red-800 hover:-translate-y-1">Left</button>
+            <button class="px-4 py-2 bg-red-600 border hover:bg-blue-300">Center</button>
+            <button class="px-4 py-2 -ml-2 bg-red-600 border rounded-r-lg hover:bg-blue-300">Right</button>
+        </div> -->
+
+        <!-- <button class="flex px-4 py-2 m-4 bg-blue-300 border-2 border-blue-300 rounded">Filled</button>
+        <button class="flex px-4 py-2 text-blue-300 border-2 border-blue-300 rounded">Outline</button>
+        <button class="flex items-center justify-center w-12 h-12 text-center bg-blue-300 rounded-full ">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </button> -->
+
+
+    <!-- Explore section -->
+    <div class="">
+        <h1 class="mt-5 ml-5 text-4xl">Top Destinations of 2020 </h1>
+    </div>
+
+
+    <div class="grid gap-4 p-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3">
+
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="explorelondon.html">
+                    <img src="images/london-aerial-cityscape-river-thames_1.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">London</h3>
+                <p>50 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploreparis.html">
+                    <img src="images/paris.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Paris</h3>
+                <p>43 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploreamsterdam.html">
+                    <img src="images/amsterdam.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Amsterdam</h3>
+                <p>21 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploredubai.html">
+                    <img src="images/dubai.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Dubai</h3>
+                <p>109 Things to do</p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="">
+            <h1 class="mt-5 ml-5 text-4xl">Recommended for you </h1>
+        </div>
+         
+        <div class="grid gap-6 p-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+                <div class="rounded-lg ">
+                    <a href="thechamberlain.html">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/267989333.jpg?k=29412cf73f3d40f3cd51d18ececadc6e53035c09d97971b2647a8a11237fdf54&o=&hp=1" alt=""  class="object-cover w-full rounded-lg h-80">
+                    </a>
+                    
+                </div>
+                <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+                   <div> <h3 class="text-lg font-bold text-gray-800">The Chamberlain</h3>
+                    <p>Tower Bridge</p></div>
+                        <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹13,352</p></div>
+                </div>
+                        <div class="flex justify-between py-2 ml-8 mr-4">
+                            <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                              </svg>
+                              <p class="px-1 bg-green-500 rounded-md text-bold">4.8</p></span>
+                              <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                              </svg><p>2 guests</p></span>
+                        </div>
+               </div>
+               
+               <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+                <div class="rounded-lg ">
+                    <a href="easyhotel.html">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/111146793.webp?k=3a14fb5b501e3865d2fbfbbd8a0898536dee4f939be58cbe9921b72cc6ab6714&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+                    </a>
+                    
+                </div>
+                <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+                   <div> <h3 class="text-lg font-bold text-gray-800">Conscious Hotel  </h3>
+                    <p>Amstelveenseweg 5 </p></div>
+                        <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,872</p></div>
+                </div>
+                        <div class="flex justify-between py-2 ml-8 mr-4">
+                            <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                              </svg>
+                              <p class="px-1 bg-green-500 rounded-md text-bold">4.8</p></span>
+                              <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                              </svg><p>2 guests</p></span>
+                        </div>
+               </div>
+
+               <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+                <div class="rounded-lg ">
+                    <a href="radissonbluhotel.html">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/282105598.webp?k=176b6161d9a57fe75d9cb9b4289cec9ea1fbc7871d65592bdc2c70f40443d6ea&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+                    </a>
+                    
+                </div>
+                <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+                   <div> <h3 class="text-lg font-bold text-gray-800">Radisson Blu Hotel</h3>
+                    <p>Baniyas Road</p></div>
+                        <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,324</p></div>
+                </div>
+                        <div class="flex justify-between py-2 ml-8 mr-4">
+                            <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                              </svg>
+                              <p class="px-1 bg-green-500 rounded-md text-bold">4.4</p></span>
+                              <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                              </svg><p>3 guests</p></span>
+                        </div>
+               </div>
+        
+        </div>
+
+
+        <div class="bg-blue- pt-2 ">
+            <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+               md:flex-row max-w-6xl">
+               <div class="mt-2">© Copyright 2020. All Rights Reserved.</div>
+               <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+                  <a href="/#" class="w-6 mx-1">
+                     <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                           5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                           -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                           0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                           -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                           0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                           -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                           0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                           -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                           -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                           1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                           -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                           6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                           0.771,-0.67 1.054,-1.093Z"></path>
+                     </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                     <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                           5.373,-12 12,-12c6.627,0 12,5.373
+                           12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                           0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                           -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                     </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                     <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <g id="Layer_1">
+                           <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                           <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                              -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
+                              -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
+                              -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
+                              -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
+                              0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
+                              2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
+                              1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
+                              0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
+                              -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
+                              -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
+                              -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
+                              0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
+                              0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
+                        </g>
+                     </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                     <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                           3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                           -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                           -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                           -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                           0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                           3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                           -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                           -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                           1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                           -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                           -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                           0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                           0.4,1.5l0,4.5l2.9,0Z"></path>
+                     </svg>
+                  </a>
+                  <a href="#" class="w-6 mx-1">
+                     <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-400" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                        <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                           -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                           -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                           0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                           0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                           -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+
+    <!-- Places to visit -->
+
+    
+
+    <!-- <div class="flex p-2 space-x-4 text-white"> -->
+        <!-- <div class="grid grid-cols-3 gap-4 text-white">
+            <div class="overflow-hidden bg-gray-500 rounded-lg shadow-md">
+                <div class="">
+                    <a href="">
+                        <img src="https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz" alt=""  class="h-40 w-90">
+                    </a>
+                </div>
+                <div class="px-4 pb-2 -mt-16">
+                    <h3 class="text-lg font-bold">London</h3>
+                    <p>50 Things</p>
+                </div>
+            </div>
+
+
+
+        <div>
+            <div><img src="https://i.ytimg.com/vi/kxiyD0MQBas/maxresdefault.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.theagilityeffect.com/app/uploads/2020/11/00_VINCI-ICONOGRAPHIE_1280x680-amsterdam-canal-on-the-west-P98BNG2.jpg" alt="" class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.topcoursesabroad.com/wp-content/uploads/2018/07/dubai.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.cpomagazine.com/wp-content/uploads/2020/10/upcoming-south-korea-kyc-verification-may-be-in-conflict-with-privacy-laws_1500.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.britannica.com/61/192661-050-997DE572/Colombo-Sri-Lanka.jpg"  alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.cathaypacific.com/content/dam/destinations/kuala-lumpur/cityguide-gallery/kuala_lumpur_skyline_920x500.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-688899881-1519413300.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://a.cdn-hotels.com/gdcs/production37/d1139/a8a147d0-c31d-11e8-825c-0242ac110006.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.britannica.com/97/60997-050-7F853611/Sydney-Opera-House-Harbour-Bridge.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.jacobs.com/sites/default/files/styles/1070xh/public/2019-10/Melbourne_HERO.jpg?itok=DHooW7aC"  class="w-40 h-20 " alt=""></div>
+        </div>
+        <div>
+            <div><img src="https://www.azamara.com/sites/default/files/heros/cape-town-south-africa-1800x1000_1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://res.klook.com/image/upload/u_activities:wizj33bw0kt3xspjcvp1,w_1.0,ar_3:2,c_scale,e_blur:10000/c_fill,w_750,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/wizj33bw0kt3xspjcvp1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.arabianbusiness.com/public/images/2021/06/14/abudhabiskyline_1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://blog.radissonblu.com/wp-content/uploads/2014/01/Town-hall-and-streets-in-Prague.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.turkishairlines.com/m/432fd2b01f3fe806/original/1400-660-jpg.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        
+        <div>
+            <div><img src="" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+</body>
+
+</html>

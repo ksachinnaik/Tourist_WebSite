@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        <a href="" class="px-2 py-4 hover:text-gray-500">About us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href=""
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="flex items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <p class="text-3xl">Nearby Attractions</p>
+    </div>
+
+    <div class="relative w-full bg-red-100 h-96">
+        <div class="absolute inset-0 z-0 bg-center bg-cover"
+            style="background-image: url('https://cdn.britannica.com/97/60997-050-7F853611/Sydney-Opera-House-Harbour-Bridge.jpg')">
+        </div>
+        <div
+            class="absolute inset-0 z-10 flex items-center justify-center text-6xl font-semibold text-white duration-300 ">
+            SYDNEY</div>
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 ml-4 mr-4 space-y-5">
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/113362518.jpg?k=0d88da7ada00bed3a1f2fd74054d6ace79d93960bc8b5dfc8cf572f28a42255a&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">SEA LIFE Admission with Combo Option</h1>
+                        <p class="lg:text-lg md:text-sm">Sydney Aquarium plus optional Madame Tussauds, Sydney Tower Eye and WILD LIFE Sydney Zoo visit</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,410
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115840170.jpg?k=e53bc0a083ee2c7599c264038928eea1f9f1f487322ca4f5ce359641f435fca8&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">General Admission to Sydney Taronga Zoo</h1>
+                        <p class="lg:text-lg md:text-sm">A visit to Australia's largest zoo to see and learn about its animals</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,734
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115886761.jpg?k=4b176d02c64e5277c6e56b119f23cda0c48fa69d58f9638f3ae7e3adaae79a29&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Walkabout Wildlife Sanctuary</h1>
+                        <p class="lg:text-lg md:text-sm">An experience to see Australian wildlife roaming free</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,779
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115862895.jpg?k=76c1d5b58b83982ab0729ac36f39ccea10d837a17de2554d5d2eb481a0460f26&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Self-Guided Audio Walking Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A chance to explore Sydney’s top landmarks at your own pace</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹1,179
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/111793487.jpg?k=5269985ea2e3907fb465a554d54a5ed057988b65d351788319ace44f8ff21e3c&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">20-minute Helicopter Tour for Two</h1>
+                        <p class="lg:text-lg md:text-sm">A bird's-eye view of the Sydney Harbor and the eastern coastline</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹11,779
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/113361932.jpg?k=d57ae56864d2cb030e91d27cf2e5c1ae01a4870a38c19d843d6e0044137ad7e8&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Sydney</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Sydney Tower Eye and SKYWALK Tickets</h1>
+                        <p class="lg:text-lg md:text-sm">A high-altitude experience of the Sydney's landscape and beyond</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,779
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+       
+       
+       
+       
+        
+        
+       
+        
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

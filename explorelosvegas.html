@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href=""
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="flex items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <p class="text-3xl">Nearby Attractions</p>
+    </div>
+
+    <div class="relative w-full bg-red-100 h-96">
+        <div class="absolute inset-0 z-0 bg-center bg-cover"
+            style="background-image: url('https://a.cdn-hotels.com/gdcs/production37/d1139/a8a147d0-c31d-11e8-825c-0242ac110006.jpg')">
+        </div>
+        <div
+            class="absolute inset-0 z-10 flex items-center justify-center text-6xl font-semibold text-white duration-300 ">
+            LAS VEGAS</div>
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 ml-4 mr-4 space-y-5">
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/97947195.jpg?k=e6d7a64798e419afca589fa7a75f8cd1fd6b08c78f2a77b04dda669bb05285ae&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">Los Vegas</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Evening Sailboat Ride with DJ</h1>
+                        <p class="lg:text-lg md:text-sm">A nighttime sailboat ride along the Hudson River with a live DJ
+                        </p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,701
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/94685147.jpg?k=4dae0987f5042215d456b1a191f38b64d907fe3f5189fa8e74f3c1d07e03af68&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Best of New York City Cruise</h1>
+                        <p class="lg:text-lg md:text-sm">A guided boat tour passing more than 100 of the Big Apple's
+                            best sights</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,271
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/97439868.jpg?k=d4f8ab0c59d02aa4740169a4802dc36dad9b4081d8bb45c3902ed2113f998268&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Admission to Empire State Building
+                            Observatory</h1>
+                        <p class="lg:text-lg md:text-sm">A ticket to visit the 86th floor of the Empire State Building
+                        </p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,399
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/102284809.jpg?k=efc60600f0a5235a2099b30b0f1391e2abde4acdb77c4f880d22d5e4ee0c84c5&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Dessert Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A guided tour of Hells Kitchen's culinary hotspots</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹4,831
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/97947187.jpg?k=a4f485427891cfb2c82b8ce20032298a7806527105bde11d65d44369a4252dd4&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">New York Harbor Sunset Cruise</h1>
+                        <p class="lg:text-lg md:text-sm">A sunset cruise that will allow you to take in views of New
+                            York City</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹5,574
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/115936165.jpg?k=158ab6a969862e3f118d0963ab7582bbdbf3db505cfc07999ca252dd537d9671&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">Sightseeing Bus Tour</h1>
+                        <p class="lg:text-lg md:text-sm">A chance to see Brooklyn's most famous sites from a
+                            double-decker bus</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹3,233
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+        <a href="#">
+            <div class="relative flex space-x-4 rounded-md shadow-lg bg-gray-50 hover:bg-yellow-50 hover:shadow-xl">
+                <div class="px-2 py-2">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/300x320/94688258.jpg?k=2ae376a52eeedfb940bf084a82d464558f3d0aa54b781d5e98298f0f5a7c25a5&o="
+                        alt="" class="object-cover w-48 h-48 rounded-md">
+                </div>
+                <div class="relative py-2 space-y-2">
+                    <div class="space-y-2">
+                        <h6 class="lg:text-lg sm:text-sm">New York</h6>
+                        <h1 class="font-bold lg:text-4xl sm:text-2xl md:text-3xl">30-minute Speedboat Ride</h1>
+                        <p class="lg:text-lg md:text-sm">A speedboat ride that zooms across the Hudson River toward the
+                            Statue of Liberty</p>
+                    </div>
+                    <div class="absolute bottom-2">
+                        <p class="text-lg">Starting from</p>
+                        <h1 class="text-3xl text-bold">₹2,201
+                        </h1>
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                    <img src="images/iconfinder_4829872_arrow_next_right_icon_64px.png" alt=""
+                        class="w-8 md:w-8 lg:w-12">
+                </div>
+            </div>
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

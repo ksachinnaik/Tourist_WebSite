@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+
+
+
+    <!-- hero -->
+    <div class="items-center justify-center w-full p-10 text-gray-300 bg-gray-800">
+        <div class="py-2 ml-12">
+            <div class="bg-white w-1/2 flex items-center rounded-full shadow-xl relative">
+              <input class="rounded-l-full w-96 py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
+              
+              <div class="p-4 absolute right-0">
+                <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="flex p-4 mb-4 text-gray-800 bg-yellow-300 rounded-lg">
+            <div class="flex mr-4">
+                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+            </div>
+            <div>
+                <h3 class="text-lg font-bold uppercase">Adithya Chippa</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odit aperiam nostrum ratione optio, asperiores et.</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="flex">
+            <div class="w-1/2">
+                <div class="flex p-4 text-gray-800 bg-gray-200 rounded-lg">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold">Vandom Stephen</h3>
+                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-1/2">
+                <div class="flex p-4 text-gray-800 bg-gray-200 rounded-lg">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" class="object-cover w-24 h-24 rounded-full">
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-bold">Vandom Stephen</h3>
+                        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <!-- https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 -->
+
+        <!-- <div class="w-64 overflow-hidden bg-gray-300 rounded-lg">
+            
+            <div>
+                <img class="object-cover" src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Shoes">
+            </div>
+
+            
+            <div class="px-3 py-4 text-gray-800 ">
+                <div>
+                    <span class="px-1 text-xs font-bold tracking-tight text-yellow-900 bg-yellow-600 rounded-full">HOT</span>
+                    <span class="px-1 text-xs font-bold tracking-tight text-yellow-900 bg-yellow-600 rounded-full">NEW</span>
+                </div>
+                <h3 class="mt-2 text-xl font-bold">Nike Sneakers</h3>
+                <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mt-1 font-bold tracking-wide">$100</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="mt-10 text-gray-300">
+            <div class="relative w-full p-2 overflow-hidden bg-gray-900 border-2 border-blue-300 rounded-lg border-opacity-20">
+                <svg class="absolute w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" placeholder="Search" class="w-11/12 px-2 ml-8 bg-transparent outline-none">
+            </div>
+        </div> -->
+
+
+        <!-- <div>
+            <button class="px-4 py-2 text-gray-800 bg-gray-300 rounded" id="btn">
+                Hover
+            </button>
+            <div class="absolute hidden px-1 text-sm text-gray-100 bg-gray-700 bg-opacity-50 rounded shadow-xl" id="tooltip">
+                This is tool tip
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', ()=>{
+                const btn = document.querySelector("#btn");
+                const tooltip = document.querySelector("#tooltip");
+
+                btn.addEventListener('mouseenter', ()=>{
+                    tooltip.classList.remove('hidden');
+                })
+                btn.addEventListener('mouseleave', ()=>{
+                    tooltip.classList.add('hidden');
+                })
+            })
+        </script> -->
+
+        <!-- <div class="w-full h-screen bg-gray-900">
+            <ul class="w-32 m-5 text-gray-800 bg-gray-100 divide-y divide-gray-700 rounded divide-opacity-25">
+                <li class="flex justify-between px-4 py-2">List item
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+
+                </li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+                <li class="flex justify-between px-4 py-2">List item</li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="flex items-center justify-center h-screen bg-gray-900">
+            <div>
+                <button class="px-4 py-2 m-2 bg-red-300 rounded" id="menu-btn">Menu</button>
+            <div class="flex-col hidden w-32 p-2 mt-1 bg-gray-200 rounded" id="dropdown">
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Posts</a>
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Profile</a>
+                <a href="#" class="px-2 py-1 rounded hover:bg-blue-200 ">Settings</a>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', ()=>{
+                const menuBtn = document.querySelector('#menu-btn');
+                const dropdown = document.querySelector('#dropdown');
+                
+                menuBtn.addEventListener('click', ()=>{
+                    /* if(dropdown.classList.contains('hidden')){
+                        dropdown.classList.remove('hidden');
+                        dropdown.classList.add('flex');
+                    } else {
+                        dropdown.classList.add('hidden');
+                        dropdown.classList.remove('flex');
+                    } */
+
+                    dropdown.classList.toggle('hidden');
+                    dropdown.classList.toggle('flex');
+                })
+            })
+        </script> -->
+
+
+
+        <!-- <div class="flex items-center justify-center h-screen space-x-2 bg-gray-900">
+            <div class="px-2 text-2xl bg-red-700 rounded-2xl">Java</div>
+            <div class="flex items-center justify-center p-2 px-2 text-2xl bg-red-700 rounded-2xl">Javascript 
+                <svg class="w-6 h-6 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+        </div> -->
+
+        
+        <!-- <div>
+            <button class="px-4 py-2 -mr-2 transition duration-200 transform bg-red-600 border rounded-l-lg shadow hover:bg-yellow-300 hover:text-red-800 hover:-translate-y-1">Left</button>
+            <button class="px-4 py-2 bg-red-600 border hover:bg-blue-300">Center</button>
+            <button class="px-4 py-2 -ml-2 bg-red-600 border rounded-r-lg hover:bg-blue-300">Right</button>
+        </div> -->
+
+        <!-- <button class="flex px-4 py-2 m-4 bg-blue-300 border-2 border-blue-300 rounded">Filled</button>
+        <button class="flex px-4 py-2 text-blue-300 border-2 border-blue-300 rounded">Outline</button>
+        <button class="flex items-center justify-center w-12 h-12 text-center bg-blue-300 rounded-full ">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </button> -->
+    
+    <!-- Explore section -->
+    <div class="">
+        <h1 class="mt-5 ml-5 text-4xl">Find and Book a Great Experience </h1>
+    </div>
+
+
+    <!-- Places to visit -->
+
+    <div class="grid gap-4 p-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3">
+
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="explorelondon.html">
+                    <img src="images/london-aerial-cityscape-river-thames_1.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">London</h3>
+                <p>50 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploreparis.html">
+                    <img src="images/paris.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Paris</h3>
+                <p>43 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploreamsterdam.html">
+                    <img src="images/amsterdam.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Amsterdam</h3>
+                <p>21 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105 ">
+            <div class="">
+                <a href="exploredubai.html">
+                    <img src="images/dubai.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Dubai</h3>
+                <p>109 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploreseoul.html">
+                    <img src="https://www.bhmpics.com/download/south_korea_seoul_city-1024x576.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">seoul</h3>
+                <p>35 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorecolombo.html">
+                    <img src="images/colombo.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">colombo</h3>
+                <p>24 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorekualalumpur.html">
+                    <img src="images/kuala lumpur.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">kuala lumpur</h3>
+                <p>40 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorenewyork.html">
+                    <img src="images/Newyork.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">New York</h3>
+                <p>61 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorelosvegas.html">
+                    <img src="images/Los Angels.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Las Vegas</h3>
+                <p>91 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploresydney.html">
+                    <img src="images/sydney.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Sydney</h3>
+                <p>23 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploremelbourne.html">
+                    <img src="images/melbourne.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Melbourne</h3>
+                <p>65 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorecapetown.html">
+                    <img src="images/capetown.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Cape Town</h3>
+                <p>13 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorecapetown.html">
+                    <img src="images/cairo.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Cairo</h3>
+                <p>34 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploreabudhabi.html">
+                    <img src="images/abudhabi.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Abudhabi</h3>
+                <p>79 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploremoscow.html">
+                    <img src="images/london-aerial-cityscape-river-thames_1.jpg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">London</h3>
+                <p>50 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="exploreprague.html">
+                    <img src="images/prague.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Prague</h3>
+                <p>48 Things to do</p>
+            </div>
+        </div>
+        <div class="overflow-hidden text-white transition duration-150 ease-in-out transform bg-gray-500 rounded-md shadow-md hover:scale-105">
+            <div class="">
+                <a href="explorelondon.html">
+                    <img src="images/athens.jpeg" alt=""  class="object-cover w-full">
+                </a>
+            </div>
+            <div class="px-4 pb-2 -mt-16">
+                <h3 class="text-2xl font-bold">Athens</h3>
+                <p>24 Things to do</p>
+            </div>
+        </div>
+        
+
+        
+
+
+    </div>
+
+    <!-- <div class="flex p-2 space-x-4 text-white"> -->
+        <!-- <div class="grid grid-cols-3 gap-4 text-white">
+            <div class="overflow-hidden bg-gray-500 rounded-lg shadow-md">
+                <div class="">
+                    <a href="">
+                        <img src="https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz" alt=""  class="h-40 w-90">
+                    </a>
+                </div>
+                <div class="px-4 pb-2 -mt-16">
+                    <h3 class="text-lg font-bold">London</h3>
+                    <p>50 Things</p>
+                </div>
+            </div>
+
+
+
+        <div>
+            <div><img src="https://i.ytimg.com/vi/kxiyD0MQBas/maxresdefault.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.theagilityeffect.com/app/uploads/2020/11/00_VINCI-ICONOGRAPHIE_1280x680-amsterdam-canal-on-the-west-P98BNG2.jpg" alt="" class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.topcoursesabroad.com/wp-content/uploads/2018/07/dubai.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.cpomagazine.com/wp-content/uploads/2020/10/upcoming-south-korea-kyc-verification-may-be-in-conflict-with-privacy-laws_1500.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.britannica.com/61/192661-050-997DE572/Colombo-Sri-Lanka.jpg"  alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.cathaypacific.com/content/dam/destinations/kuala-lumpur/cityguide-gallery/kuala_lumpur_skyline_920x500.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-688899881-1519413300.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://a.cdn-hotels.com/gdcs/production37/d1139/a8a147d0-c31d-11e8-825c-0242ac110006.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.britannica.com/97/60997-050-7F853611/Sydney-Opera-House-Harbour-Bridge.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.jacobs.com/sites/default/files/styles/1070xh/public/2019-10/Melbourne_HERO.jpg?itok=DHooW7aC"  class="w-40 h-20 " alt=""></div>
+        </div>
+        <div>
+            <div><img src="https://www.azamara.com/sites/default/files/heros/cape-town-south-africa-1800x1000_1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://res.klook.com/image/upload/u_activities:wizj33bw0kt3xspjcvp1,w_1.0,ar_3:2,c_scale,e_blur:10000/c_fill,w_750,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/wizj33bw0kt3xspjcvp1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://www.arabianbusiness.com/public/images/2021/06/14/abudhabiskyline_1.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://blog.radissonblu.com/wp-content/uploads/2014/01/Town-hall-and-streets-in-Prague.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        <div>
+            <div><img src="https://cdn.turkishairlines.com/m/432fd2b01f3fe806/original/1400-660-jpg.jpg" alt=""  class="w-40 h-20 "></div>
+        </div>
+        
+        <div>
+            <div><img src="" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+</body>
+
+</html>

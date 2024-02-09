@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/myStyle.css">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tourist Assistant</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <!-- Top Menu -->
+    <nav class="bg-blue-100">
+        <div class="px-4 mx-auto max-w-7xl">
+            <div class="flex justify-between">
+
+                <div class="flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center px-2 py-3 logo">
+                            <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-512.png"
+                                alt="logo" class="w-16 h-16">
+                            <p class="font-bold">Tourist Assistant</p>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="items-center hidden space-x-1 md:flex md:block">
+                        <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                        <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                        <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                        <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                        <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                        <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="items-center hidden space-x-1 md:flex">
+                    <a href="login.html" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                    <a href="signup.html"
+                        class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                </div>
+
+                <!-- Mobile Button  -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden" id="mobile-menu">
+            <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+            <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+            <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+            <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+            <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+        </div>
+    </nav>
+    <div class="items-center justify-center w-full p-10 text-center text-gray-300 bg-gray-800">
+        <h3 class="text-4xl font-bold">Explore Hotels</h3>
+        <p></p>
+    </div>
+    
+    <div class="grid gap-6 p-8 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      <!--hotel 1-->
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/273751453.webp?k=c34964e60ab0eeab0ecbda3b14b801f5a558466489428937c905454dd80f1d61&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">an IHG Hotel  </h3>
+               <p>Aviation City</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,872</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.8</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>2 guests</p></span>
+                   </div>
+          </div>
+          <!--hotel 2-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="radissonbluhotel.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/282105598.webp?k=176b6161d9a57fe75d9cb9b4289cec9ea1fbc7871d65592bdc2c70f40443d6ea&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Radisson Blu Hotel</h3>
+               <p>Baniyas Road</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,324</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.4</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 3-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/260383407.webp?k=0a2e44a85e1ca095cb18643bd5c69c962e1fffe8c9254d3e05a127d3dfd33bc0&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Swissôtel Al Ghurair </h3>
+               <p>Omar Bin Al Khattab Street</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹8,345</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.7</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 4-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/228079043.webp?k=744c9f953563b1395d3775709ab5717f779f1d152e6d8cf55f2b883dd77f4f41&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>c0a
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Ramada by Wyndham</h3>
+               <p>155 Salahudin Road Deira</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹7999</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.3</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 5-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/141437197.webp?k=bfacbe1b42a085b392be4adbc0acef62330c26d2fcabee2f58623ba6c1ce1ea6&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Hyatt Regency </h3>
+               <p>Dubai Healthcare City</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹7,324</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">3.9</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 6-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/110317479.webp?k=f96312541dd811fd91d0ec17efcc2a801c8cdf77fc45ec17bde2f6c521c7e478&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800"> Grand Hyatt Dubai</h3>
+               <p>Oud Metha</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹6,784</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.7</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>2 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 7-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/29155195.webp?k=124b53200111acedf125af83e0145edaae22456094f036a51af602864598c83e&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800"> Dusit Thani Dubai</h3>
+               <p>133, Sheikh Zayed Road</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹8,475</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.0</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>3 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 8-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/291372755.webp?k=eb4722618739523ce7fc00c1df23f39e40f3352c233b4cc0e9e7216e877ecbeb&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Dusit D2 Kenz</h3>
+               <p>Sheikh Zayed Road</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹9,874</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.2</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+          <!--hotel 9-->     
+        <div  class="transition duration-150 ease-in-out transform bg-white rounded-md shadow-md hover:scale-105 hover:opacity-100 opacity-90">
+           <div class="rounded-lg ">
+               <a href="hotelindigo.html">
+                   <img src="https://cf.bstatic.com/xdata/images/hotel/square600/268326802.webp?k=41421e73f13e4dadb8c968e5a576abbeaeefd91a3b0eff95dc062e7dafa7b093&o=" alt=""  class="object-cover w-full rounded-lg h-80">
+               </a>
+               
+           </div>
+           <div class="flex justify-around py-3 mt-5 ml-2 text-gray-500">
+              <div> <h3 class="text-lg font-bold text-gray-800">Kempinski Hotel Mall </h3>
+               <p>Sheikh Zayed Road</p></div>
+                   <div class="flex justify-center px-3 text-sm font-bold text-green-500 border-4 border-green-500 rounded-full bg-gray-50"><p class="py-3">₹14,394</p></div>
+           </div>
+                   <div class="flex justify-between py-2 ml-8 mr-4">
+                       <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                         </svg>
+                         <p class="px-1 bg-green-500 rounded-md text-bold">4.6</p></span>
+                         <span class="flex"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg><p>4 guests</p></span>
+                   </div>
+          </div>     
+                
+          
+        
+      </div>
+      
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- TailwindCSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Hotels London</title>
+
+    <script>
+        // Toggle mobile menu
+        function myFunction() {
+            var element = document.getElementById("mobile-menu");
+            element.classList.toggle("hidden");
+        }
+
+        function myFunction1() {
+  alert("Sorry! No Bookings Available Right Now");
+}
+    </script>
+</head>
+
+<body class="bg-blue-50">
+    <div>
+        <!-- Top Menu -->
+        <nav class="bg-blue-100">
+            <div class="px-4 mx-auto max-w-7xl">
+                <div class="flex justify-between">
+
+                    <div class="flex items-center space-x-4">
+                        <!-- logo -->
+                        <div>
+                            <a href="index.html" class="flex items-center px-2 py-3 logo">
+                                <img src="images/iconfinder_897231_airplane_map_travel_vacation_icon.svg" alt="logo"
+                                    class="w-16 h-16">
+                                <p class="font-bold">Tourist Assistant</p>
+                            </a>
+                        </div>
+
+                        <!-- primary nav -->
+                        <div class="items-center hidden space-x-1 md:flex md:block">
+                            <a href="index.html" class="px-2 py-4 hover:text-gray-500">Home</a>
+                            <a href="explore.html" class="px-2 py-4 hover:text-gray-500">Explore</a>
+                            <a href="hotels.html" class="px-2 py-4 hover:text-gray-500">Hotels</a>
+                            <a href="flights.html" class="px-2 py-4 hover:text-gray-500">Flights</a>
+                            <a href="about.html" class="px-2 py-4 hover:text-gray-500">About us</a>
+                            <a href="contact.html" class="px-2 py-4 hover:text-gray-500">Contact us</a>
+                        </div>
+                    </div>
+                    <!-- secondary nav -->
+                    <div class="items-center hidden space-x-1 md:flex">
+                        <a href="" class="px-3 py-4 font-bold hover:text-gray-500">Login</a>
+                        <a href=""
+                            class="px-3 py-3 font-bold text-yellow-900 transition duration-150 bg-yellow-300 rounded-lg hover:bg-yellow-200 hover:text-yellow-700">Signup</a>
+                    </div>
+
+                    <!-- Mobile Button  -->
+                    <div class="flex items-center md:hidden">
+                        <button class="mobile-menu-button" onclick="myFunction()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="hidden" id="mobile-menu">
+                <a href="explore.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Explore</a>
+                <a href="hotels.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Hotels</a>
+                <a href="flights.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Flights</a>
+                <a href="about.html" class="block px-3 py-2 text-sm hover:bg-blue-200">About us</a>
+                <a href="contact.html" class="block px-3 py-2 text-sm hover:bg-blue-200">Contact us</a>
+            </div>
+        </nav>
+
+        <div class="items-center justify-center flex w-full p-10 text-gray-300 bg-gray-800">
+            <p class="font-bold text-2xl">RADISSION BLU HOTEL</p> <!--Capital letter heading-->
+        </div>
+
+
+
+        <div class="px-20 mt-5 mb-4 ml-10 mr-10 bg-white shadow-xl rounded-2xl">
+            <!-- image grid -->
+            <div class="grid grid-cols-3 grid-rows-3 gap-2 py-6 my-2 w-/3 h-2/3">
+                <div class="col-span-2 row-span-3 ">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/282105598.jpg?k=176b6161d9a57fe75d9cb9b4289cec9ea1fbc7871d65592bdc2c70f40443d6ea&o=&hp=1"
+                        alt="" class="object-cover w-full h-full shadow-md rounded-xl">
+                </div>
+                <div class="">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/267560242.jpg?k=fe05600026ece8d98133f8a7b0054fccb4867c0eb6dccc42941a70afa7f378b4&o=&hp=1"
+                        alt="" class="h-auto shadow-md rounded-xl">
+                </div>
+                <div class="">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/79577672.jpg?k=7802cee0159dbaac2a59c156bbb8afccffa5c97ecc7021d8e72f11a78385509f&o=&hp=1"
+                        alt="" class="object-cover shadow-md rounded-xl">
+                </div>
+                <div class="">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/138709243.jpg?k=76f1d053bd52e6825db8f8efa1777747a4a7f350f687ad7532ebe27ed73d0753&o=&hp=1"
+                        alt="" class="object-cover shadow-md rounded-xl">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="justify-center text-center bg-gray-100 shadow-xl md:w-1/4 lg:w-1/4 sm:w-auto rounded-xl">
+                    <h3 class="text-2xl font-bold">Facilities</h3>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:rgb(158, 143, 143)">
+                    <div class="flex px-3">
+                        <div class="w-8">
+                            <img src="images/iconfinder_211944_wifi_icon_64px.png" alt="" class="mt-3">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">WiFi</p>
+                        </div>
+                    </div>
+                    <div class="flex px-3">
+                        <div class="w-8">
+                            <img src="images/iconfinder_4791606_24 hours_clock_hours_stopwatch_time_icon_64px.png"
+                                alt="" class="mt-6">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">24X7 Service</p>
+                        </div>
+                    </div>
+                    <div class="flex px-3">
+                        <div class="w-6">
+                            <img src="images/iconfinder_2638322_parking_place_public_sign_symbol_icon_64px.png" alt=""
+                                class="mt-4">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">Parking</p>
+                        </div>
+                    </div>
+                    <div class="flex px-3">
+                        <div class="w-8">
+                            <img src="images/iconfinder_809670_body building_fitness_sports_weight_icon_64px.png" alt=""
+                                class="w-8 mt-4">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">Gym</p>
+                        </div>
+                    </div>
+                    <div class="flex px-3">
+                        <div class="w-8">
+                            <img src="images/iconfinder_5976966_delivery_hotel_room_service_icon_64px.png" alt=""
+                                class="mt-2 ">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="flex px-3">
+                        <div class="w-6">
+                            <img src="images/iconfinder_352493_bar_local_icon_64px.png" alt="" class="mt-4">
+                        </div>
+                        <div class="px-6 py-4">
+                            <p class="font-bold">Bar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative ml-5">
+                    <div class="flex">
+                        <h2 class="text-2xl font-bold">Radisson Blu Hotel</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-2 " viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <!-- rating -->
+                    <div class="flex items-center ">
+                        <div class="flex items-center mt-2 mb-4">
+                            <svg class="w-4 h-4 mx-1 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            <svg class="w-4 h-4 mx-1 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            <svg class="w-4 h-4 mx-1 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            <svg class="w-4 h-4 mx-1 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            <svg class="w-4 h-4 mx-1 text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <hr><div class="">
+                    <p class="text-lg">The Radisson Blu lies within the beautiful Deira Creek area of Dubai, a short walk to the bus and metro stations and only 7 km from Dubai International Airport. The hotel, first built in 1975, is a classic fixture of Old Dubai. This area teems with shopping malls as well as traditional souks such as the Spice Market.
+
+                        Each of the 288 rooms and suites boasts a private balcony, coffee or tea provisions and other upscale amenities. It makes for a comfortable stay in Dubai, whether you’re visiting for leisure or business.
+                        Guests can choose from 9 on-site dining venues, including a confectionery and a 24-hour international restaurant offering a variety of themed buffets.
+                        
+                        Take advantage of a well-equipped fitness club, a business center, it also includes 21 meeting rooms, with the largest hosting events of up to 1,400 attendees.</p></div>
+                        <button class="absolute px-3 py-1 text-gray-800 bg-blue-400 border border-gray-400 rounded bottom-1 right-4" onclick="myFunction1()">Reserve
+                        </button>
+             </div>
+
+
+
+
+            </div>
+
+            <!-- review item -->
+            <div class="flex">
+            <div class="max-w-sm px-4 py-4 mt-5 bg-gray-100 rounded-lg shadow-lg">
+                <div class="px-4 py-4 mb-1 tracking-wide">
+                    <h2 class="mt-1 font-semibold text-gray-800">67 Users reviews</h2>
+                    <div class="px-8 pb-3 -mx-8 border-b">
+                        <div class="flex items-center mt-1">
+                            <div class="w-1/5 tracking-tighter text-indigo-500 ">
+                                <span>5 star</span>
+                            </div>
+                            <div class="w-3/5">
+                                <div class="w-full h-2 bg-gray-300 rounded-lg">
+                                    <div class="w-7/12 h-2 bg-green-500 rounded-lg "></div>
+                                </div>
+                            </div>
+                            <div class="w-1/5 pl-3 text-gray-700">
+                                <span class="text-sm">51%</span>
+                            </div>
+                        </div><!-- first -->
+                        <div class="flex items-center mt-1">
+                            <div class="w-1/5 tracking-tighter text-indigo-500">
+                                <span>4 star</span>
+                            </div>
+                            <div class="w-3/5">
+                                <div class="w-full h-2 bg-gray-300 rounded-lg">
+                                    <div class="w-1/5 h-2 bg-green-500 rounded-lg"></div>
+                                </div>
+                            </div>
+                            <div class="w-1/5 pl-3 text-gray-700">
+                                <span class="text-sm">17%</span>
+                            </div>
+                        </div><!-- second -->
+                        <div class="flex items-center mt-1">
+                            <div class="w-1/5 tracking-tighter text-indigo-500">
+                                <span>3 star</span>
+                            </div>
+                            <div class="w-3/5">
+                                <div class="w-full h-2 bg-gray-300 rounded-lg">
+                                    <div class="w-3/12 h-2 bg-green-500 rounded-lg "></div>
+                                </div>
+                            </div>
+                            <div class="w-1/5 pl-3 text-gray-700">
+                                <span class="text-sm">19%</span>
+                            </div>
+                        </div><!-- thierd -->
+                        <div class="flex items-center mt-1">
+                            <div class="w-1/5 tracking-tighter text-indigo-500 ">
+                                <span>2 star</span>
+                            </div>
+                            <div class="w-3/5">
+                                <div class="w-full h-2 bg-gray-300 rounded-lg">
+                                    <div class="w-1/5 h-2 bg-yellow-400 rounded-lg "></div>
+                                </div>
+                            </div>
+                            <div class="w-1/5 pl-3 text-gray-700">
+                                <span class="text-sm">8%</span>
+                            </div>
+                        </div><!-- 4th -->
+                        <div class="flex items-center mt-1">
+                            <div class="w-1/5 tracking-tighter text-indigo-500">
+                                <span>1 star</span>
+                            </div>
+                            <div class="w-3/5">
+                                <div class="w-full h-2 bg-gray-300 rounded-lg">
+                                    <div class="w-2/12 h-2 bg-red-500 rounded-lg "></div>
+                                </div>
+                            </div>
+                            <div class="w-1/5 pl-3 text-gray-700">
+                                <span class="text-sm">5%</span>
+                            </div>
+                        </div><!-- 5th -->
+                    </div>
+                </div>
+                <div class="w-full px-4">
+                    <h3 class="font-medium tracking-tight">Review this item</h3>
+                    <p class="py-1 text-sm text-gray-700">
+                        give your opinion about this item.
+                    </p>
+                    <button class="px-3 py-1 mt-2 text-gray-800 bg-blue-400 border border-gray-400 rounded">write a
+                        review</button>
+                </div>
+            </div>
+            <div class="w-3/5 mt-4 ml-16 bg-gray-100 rounded-lg shadow-lg space-y-2 ">
+               <div class="flex"><span><img src="images/iconfinder_3586371_calendar_date_schedule_icon_64px.png" class=""></span><span><p class="mt-3 font-bold text-md">Check In</p></span><span class="ml-2"><p class="mt-3">15:00-23:00</p></span></div>
+               <div class="flex"><span><img src="images/iconfinder_3586371_calendar_date_schedule_icon_64px.png" class=""></span><span><p class="mt-3 font-bold text-md">Check Out</p></span><span class="ml-2"><p class="mt-3">6:00-12:00</p></span></div>
+               <div class="flex"><span><img src="images/iconfinder_211761_information_icon_64px.png" class=""></span><span><p class="font-bold text-md">Cancellation</p></span><span class="ml-2"><p class="">Cancellation and prepayment policies vary according to accommodation type. Please check what conditions may apply to each option when making your selection.</p></span></div>
+            </div></div>
+            <div class="py-2 mt-3">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div class="inline-block relative">
+                        <div class="relative w-16 h-16 rounded-full overflow-hidden">
+                          <img class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover" src="images/adityayadav.jpeg" alt="Profile picture">
+                          <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
+                        </div>
+                        <svg class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <p class="flex items-baseline">
+                        <span class="text-gray-600 font-bold">Adithya Yadav</span>
+                        <span class="ml-2 text-green-600 text-xs"></span>
+                      </p>
+                      <div class="flex items-center mt-1">
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                      </div>
+                      <div class="flex items-center mt-4 text-gray-600">
+                        <div class="flex items-center">
+                          <span class="text-sm">Service</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                        <div class="flex items-center ml-4">
+                          <span class="text-sm">Value for Money</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <span class="font-bold">Great Place!</span>
+                        <p class="mt-1">“This is a lovely hotel just a five minute walk. The staff were all friendly and polite. The room was spacious, clean and the bed really comfortable. Breakfast was included in the price and was lovely but it was cold when it got to me. This however was the only criticism I had, I would certainly use this hotel again.”</p>
+                      </div>
+                      <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current">
+                        <button class="flex items-center">
+                          <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.08 12.16A2.99 2.99 0 0 1 0 10a3 3 0 0 1 5.08-2.16l8.94-4.47a3 3 0 1 1 .9 1.79L5.98 9.63a3.03 3.03 0 0 1 0 .74l8.94 4.47A2.99 2.99 0 0 1 20 17a3 3 0 1 1-5.98-.37l-8.94-4.47z"/></svg>
+                          <span class="ml-2">Share</span>
+                        </button>
+                        <div class="flex items-center">
+                          <span>Was this review helplful?</span>
+                          <button class="flex items-center ml-6">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/></svg>
+                            <span class="ml-2">56</span>
+                          </button>
+                          <button class="flex items-center ml-4">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 20a2 2 0 0 1-2-2v-6H2a2 2 0 0 1-2-2V8l2.3-6.12A3.11 3.11 0 0 1 5 0h8a2 2 0 0 1 2 2v8l-3 7v3h-1zm6-10V0h3v10h-3z"/></svg>
+                            <span class="ml-2">10</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div class="inline-block relative">
+                        <div class="relative w-16 h-16 rounded-full overflow-hidden">
+                          <img class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover" src="images/vikas.jpeg" alt="Profile picture">
+                          <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
+                        </div>
+                        <svg class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <p class="flex items-baseline">
+                        <span class="text-gray-600 font-bold">Vikas</span>
+                        <span class="ml-2 text-green-600 text-xs"></span>
+                      </p>
+                      <div class="flex items-center mt-1">
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                      </div>
+                      <div class="flex items-center mt-4 text-gray-600">
+                        <div class="flex items-center">
+                          <span class="text-sm">Service</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                        <div class="flex items-center ml-4">
+                          <span class="text-sm">Value for Money</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <span class="font-bold">Good staff!</span>
+                        <p class="mt-1">“The staff were exceptional especially LAURA and REGY, who go a long way and do everything possible to make your stay, that little bit better. ”</p>
+                      </div>
+                      <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current">
+                        <button class="flex items-center">
+                          <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.08 12.16A2.99 2.99 0 0 1 0 10a3 3 0 0 1 5.08-2.16l8.94-4.47a3 3 0 1 1 .9 1.79L5.98 9.63a3.03 3.03 0 0 1 0 .74l8.94 4.47A2.99 2.99 0 0 1 20 17a3 3 0 1 1-5.98-.37l-8.94-4.47z"/></svg>
+                          <span class="ml-2">Share</span>
+                        </button>
+                        <div class="flex items-center">
+                          <span>Was this review helplful?</span>
+                          <button class="flex items-center ml-6">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/></svg>
+                            <span class="ml-2">56</span>
+                          </button>
+                          <button class="flex items-center ml-4">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 20a2 2 0 0 1-2-2v-6H2a2 2 0 0 1-2-2V8l2.3-6.12A3.11 3.11 0 0 1 5 0h8a2 2 0 0 1 2 2v8l-3 7v3h-1zm6-10V0h3v10h-3z"/></svg>
+                            <span class="ml-2">10</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                      <div class="inline-block relative">
+                        <div class="relative w-16 h-16 rounded-full overflow-hidden">
+                          <img class="absolute top-0 left-0 w-full h-full bg-cover object-fit object-cover" src="images/chadithya.jpeg" alt="Profile picture">
+                          <div class="absolute top-0 left-0 w-full h-full rounded-full shadow-inner"></div>
+                        </div>
+                        <svg class="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <p class="flex items-baseline">
+                        <span class="text-gray-600 font-bold">Adithya Raman</span>
+                        <span class="ml-2 text-green-600 text-xs"></span>
+                      </p>
+                      <div class="flex items-center mt-1">
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <svg class="w-4 h-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                      </div>
+                      <div class="flex items-center mt-4 text-gray-600">
+                        <div class="flex items-center">
+                          <span class="text-sm">Service</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                        <div class="flex items-center ml-4">
+                          <span class="text-sm">Value for Money</span>
+                          <div class="flex items-center ml-2">
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-3 h-3 fill-current text-yellow-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <span class="font-bold">Superb!</span>
+                        <p class="mt-1">“This hotel was close to where I was working in the City so that was the main reason for staying. The staff and the hotel were brilliant. It was very clean and covid compliant. Breakfast was fabulous. ”</p>
+                      </div>
+                      <div class="flex items-center justify-between mt-4 text-sm text-gray-600 fill-current">
+                        <button class="flex items-center">
+                          <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.08 12.16A2.99 2.99 0 0 1 0 10a3 3 0 0 1 5.08-2.16l8.94-4.47a3 3 0 1 1 .9 1.79L5.98 9.63a3.03 3.03 0 0 1 0 .74l8.94 4.47A2.99 2.99 0 0 1 20 17a3 3 0 1 1-5.98-.37l-8.94-4.47z"/></svg>
+                          <span class="ml-2">Share</span>
+                        </button>
+                        <div class="flex items-center">
+                          <span>Was this review helplful?</span>
+                          <button class="flex items-center ml-6">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/></svg>
+                            <span class="ml-2">56</span>
+                          </button>
+                          <button class="flex items-center ml-4">
+                            <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 20a2 2 0 0 1-2-2v-6H2a2 2 0 0 1-2-2V8l2.3-6.12A3.11 3.11 0 0 1 5 0h8a2 2 0 0 1 2 2v8l-3 7v3h-1zm6-10V0h3v10h-3z"/></svg>
+                            <span class="ml-2">10</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
